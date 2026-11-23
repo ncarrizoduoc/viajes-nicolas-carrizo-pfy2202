@@ -1,8 +1,8 @@
-import { Link } from "react-router"
 import { useState, useEffect, useCallback, useRef } from 'react'
 import DestinoCard from "../components/DestinoCard"
 import ErrorCarga from "../components/ErrorCarga"
 import Spinner from "../components/Spinner";
+import BotonLink from "../components/BotonLink";
 
 async function getDestinos(tipoError = "", signal) {
     const endpoint = tipoError
@@ -87,20 +87,13 @@ function Destinos() {
     return (
         <>
             <section className="flex flex-col gap-6 p-6">
-                <div className="flex flex-col items-center">
-                    <h1>Nuestros Destinos</h1>
-                    <p>Explora nuestro catálogo de viajes. Haz clic en "Más información" para consultar vuelos y hoteles.</p>
-
-                </div>
                 <div className="flex flex-col md:flex-row gap-4 items-start">
-                    <Link to={"/"} className="inline-flex items-center rounded bg-gray-800 px-3 py-2 text-white font-semibold hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
-                        Volver al inicio
-                    </Link>
+                    <BotonLink/>
                     <button
                         onClick={() => cargarDestinos()}
                         disabled={cargando}
                         className="inline-flex items-center rounded bg-gray-200 px-3 py-2 text-gray-900 font-semibold hover:bg-gray-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
-                        Recargar destinos
+                        Volver a cargar
                     </button>
                     <button
                         onClick={() => cargarDestinos("404")}
@@ -114,6 +107,12 @@ function Destinos() {
                         className="inline-flex items-center rounded bg-gray-200 px-3 py-2 text-gray-900 font-semibold hover:bg-red-800 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
                         Simular error 500
                     </button>
+                </div>
+
+                <div className="flex flex-col items-center">
+                    <h1>Nuestros Destinos</h1>
+                    <p>Explora nuestro catálogo de viajes. Haz clic en "Más información" para consultar vuelos y hoteles.</p>
+
                 </div>
 
                 {cargando && !error && (
