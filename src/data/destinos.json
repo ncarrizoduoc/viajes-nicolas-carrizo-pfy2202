@@ -4,6 +4,11 @@
         "ciudad": "Río de Janeiro",
         "pais" : "Brasil",
         "img" : "https://picsum.photos/id/16/400/400",
+        "imgCarrusel" : [
+            "https://picsum.photos/seed/rio1/800/500",
+            "https://picsum.photos/seed/rio2/800/500",
+            "https://picsum.photos/seed/rio3/800/500"
+        ],
         "actividades" : [
             "Playas",
             "Discotecas",
@@ -43,6 +48,11 @@
         "ciudad": "Poznan",
         "pais" : "Polonia",
         "img" : "https://picsum.photos/seed/poznan/400/400",
+        "imgCarrusel" : [
+            "https://picsum.photos/seed/poznan1/800/500",
+            "https://picsum.photos/seed/poznan2/800/500",
+            "https://picsum.photos/seed/poznan3/800/500"
+        ],
         "actividades" : [
             "Visitas guiadas",
             "Museos"
@@ -74,6 +84,11 @@
         "ciudad": "Tokio",
         "pais" : "Japón",
         "img" : "https://picsum.photos/seed/tokio/400/400",
+        "imgCarrusel" : [
+            "https://picsum.photos/seed/tokio1/800/500",
+            "https://picsum.photos/seed/tokio2/800/500",
+            "https://picsum.photos/seed/tokio3/800/500"
+        ],
         "actividades" : [
             "Compras",
             "Miradores",
@@ -111,14 +126,20 @@
         "ciudad": "Ontario",
         "pais" : "Canadá",
         "img" : "https://picsum.photos/id/11/400/400",
+        "imgCarrusel" : [
+            "https://picsum.photos/seed/ontario1/800/500",
+            "https://picsum.photos/seed/ontario2/800/500",
+            "https://picsum.photos/seed/ontario3/800/500"
+        ],
         "actividades" : [
-            "Compras",
+            "Deportes",
+            "Vida silvestre",
             "Miradores",
-            "Gastronomía"
+            "Tours urbanos"
         ],
         "vuelos" : [
             {
-                "nombre" : "Vuelo Santiago - Ontario (solo ida)",
+                "nombre" : "Vuelo Santiago - Ontario (ida y vuelta)",
                 "precio" : 540000,
                 "cupos" : 155
             }
