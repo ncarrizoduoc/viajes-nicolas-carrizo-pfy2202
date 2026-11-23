@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/frontend2-semana4/',
+  base: '/viajes-nicolas-carrizo-pfy2202/',
 })
