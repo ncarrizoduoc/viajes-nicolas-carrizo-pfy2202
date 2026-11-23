@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router'
-import logo from "../assets/img/book-logo.svg"
+import logo from "../assets/img/plane-logo.svg"
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +15,7 @@ function Navbar() {
                         width="30"
                         height="30"
                     />
-                    <span>ExLibris</span>
+                    <span>ChileViajes</span>
                 </Link>
                 <button
                     className="inline-flex size-10 items-center justify-center rounded text-gray-700 hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 lg:hidden"
@@ -37,13 +37,8 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/catalogo" end onClick={() => setIsOpen(false)} className={({ isActive }) => `block rounded px-3 py-2 ${isActive ? 'bg-gray-700 text-white' : 'text-gray-800 hover:bg-gray-200'}`}>
-                                Catálogo
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/carrito" onClick={() => setIsOpen(false)} className={({ isActive }) => `block rounded px-3 py-2 ${isActive ? 'bg-gray-700 text-white' : 'text-gray-800 hover:bg-gray-200'}`}>
-                                Carrito
+                            <NavLink to="/destinos" end onClick={() => setIsOpen(false)} className={({ isActive }) => `block rounded px-3 py-2 ${isActive ? 'bg-gray-700 text-white' : 'text-gray-800 hover:bg-gray-200'}`}>
+                                Destinos
                             </NavLink>
                         </li>
                     </ul>
