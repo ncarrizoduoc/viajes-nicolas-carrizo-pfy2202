@@ -1,10 +1,12 @@
 import { Link } from 'react-router'
-import precioMinimo from '../util/precioMinimo.js'
+import precioMinimoVuelo from '../util/precioMinimoVuelo.js'
 import formatoMoneda from "../util/formatoMoneda";
+import precioMinimoHotel from '../util/precioMinimoHotel.js';
 
 function DestinoCard({ destino }) {
-    const { ciudad, pais, img, actividades, vuelos } = destino
-    const precioMin = precioMinimo(vuelos)
+    const { ciudad, pais, img, actividades, vuelos, hoteles } = destino
+    const precioMinVuelo = precioMinimoVuelo(vuelos)
+    const precioMinHotel = precioMinimoHotel(hoteles)
 
     return (
         <>
@@ -18,10 +20,15 @@ function DestinoCard({ destino }) {
                     <div className="py-4 text-start">
                         <p className="font-semibold">{pais}</p>
                         <div className="font-bold text-3xl mb-2">{ciudad}</div>
-                        <p className="text-start text-gray-700">
-                            {precioMin !== null
-                                ? `Vuelos desde: ${formatoMoneda.format(precioMin)}`
+                        <p className="text-start text-gray-700 mb-2">
+                            {precioMinVuelo !== null
+                                ? `Vuelos desde: ${formatoMoneda.format(precioMinVuelo)}`
                                 : "No hay vuelos disponibles"}
+                        </p>
+                        <p className="text-start text-gray-700">
+                            {precioMinHotel !== null
+                                ? `Alojamiento desde: ${formatoMoneda.format(precioMinHotel)}/noche`
+                                : "No hay hoteles disponibles"}
                         </p>
                     </div>
                     <div className="mt-auto flex flex-col gap-3 pt-4 items-start">
@@ -36,7 +43,7 @@ function DestinoCard({ destino }) {
                             ))}
                         </div>
                     </div>
-                    <Link to={`/destinos/${destino.id}`} className="mt-3 block w-full rounded bg-gray-700 px-4 py-2 text-center font-bold text-white hover:bg-black">
+                    <Link to={`/destinos/${destino.id}`} className="mt-3 block w-fit rounded bg-gray-700 px-4 py-2 text-center font-bold text-white hover:bg-black">
                         Más información
                     </Link>
                 </div>
