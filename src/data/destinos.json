@@ -1,0 +1,137 @@
+[
+    {
+        "id" : 1,
+        "ciudad": "Río de Janeiro",
+        "pais" : "Brasil",
+        "img" : "https://picsum.photos/id/16/400/400",
+        "actividades" : [
+            "Playas",
+            "Discotecas",
+            "Parques temáticos"
+        ],
+        "vuelos" : [
+            {
+                "nombre" : "Vuelo Santiago - Río de Janeiro (solo ida)",
+                "precio" : 145990,
+                "cupos" : 56
+            },
+            {
+                "nombre" : "Vuelo Santiago - Río de Janeiro (ida y vuelta)",
+                "precio" : 200990,
+                "cupos" : 43
+            }
+        ],
+        "hoteles" : [
+            {
+                "nombre" : "Hotel Amazonia",
+                "img" : "https://picsum.photos/seed/hotelamazonia/300/300",
+                "precio" : 139990,
+                "disponibilidad" : "Todo el año",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus magna justo, eu pellentesque massa sagittis in. Donec id nisi vitae nulla eleifend ultrices. Aliquam elementum ex a felis pharetra, quis interdum erat imperdiet. Nam venenatis dapibus mauris sit amet efficitur. Phasellus eget viverra libero. Integer dapibus elit sapien, pulvinar feugiat augue elementum eget. Pellentesque vitae pharetra nibh."
+            },
+            {
+                "nombre" : "Hotel Carrero",
+                "img" : "https://picsum.photos/seed/hotelcarrero/300/300",
+                "precio" : 205000,
+                "disponibilidad" : "Del 1 de enero al 31 de marzo",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus magna justo, eu pellentesque massa sagittis in. Donec id nisi vitae nulla eleifend ultrices. Aliquam elementum ex a felis pharetra, quis interdum erat imperdiet. Nam venenatis dapibus mauris sit amet efficitur. Phasellus eget viverra libero. Integer dapibus elit sapien, pulvinar feugiat augue elementum eget. Pellentesque vitae pharetra nibh."
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "ciudad": "Poznan",
+        "pais" : "Polonia",
+        "img" : "https://picsum.photos/seed/poznan/400/400",
+        "actividades" : [
+            "Visitas guiadas",
+            "Museos"
+        ],
+        "vuelos" : [
+            {
+                "nombre" : "Vuelo Santiago - Poznan (solo ida)",
+                "precio" : 1039990,
+                "cupos" : 201
+            },
+            {
+                "nombre" : "Vuelo Santiago - Poznan (ida y vuelta)",
+                "precio" : 1505990,
+                "cupos" : 175
+            }
+        ],
+        "hoteles" : [
+            {
+                "nombre" : "Hotel Plaza Poznan",
+                "img" : "https://picsum.photos/seed/hotelpoznan/300/300",
+                "precio" : 254000,
+                "disponibilidad" : "Todo el año",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus magna justo, eu pellentesque massa sagittis in. Donec id nisi vitae nulla eleifend ultrices. Aliquam elementum ex a felis pharetra, quis interdum erat imperdiet. Nam venenatis dapibus mauris sit amet efficitur. Phasellus eget viverra libero. Integer dapibus elit sapien, pulvinar feugiat augue elementum eget. Pellentesque vitae pharetra nibh."
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "ciudad": "Tokio",
+        "pais" : "Japón",
+        "img" : "https://picsum.photos/seed/tokio/400/400",
+        "actividades" : [
+            "Compras",
+            "Miradores",
+            "Gastronomía"
+        ],
+        "vuelos" : [
+            {
+                "nombre" : "Vuelo Santiago - Tokio (solo ida)",
+                "precio" : 845990,
+                "cupos" : 123
+            },
+            {
+                "nombre" : "Vuelo Santiago - Tokio (ida y vuelta)",
+                "precio" : 1200000,
+                "cupos" : 12
+            },
+            {
+                "nombre" : "Vuelo Antofagasta - Tokio (ida y vuelta)",
+                "precio" : 1010221,
+                "cupos" : 164
+            }
+        ],
+        "hoteles" : [
+            {
+                "nombre" : "Tokyo Hotel",
+                "img" : "https://picsum.photos/seed/hoteltokio/300/300",
+                "precio" : 320000,
+                "disponibilidad" : "Del 1 de enero al 30 de noviembre",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus magna justo, eu pellentesque massa sagittis in. Donec id nisi vitae nulla eleifend ultrices. Aliquam elementum ex a felis pharetra, quis interdum erat imperdiet. Nam venenatis dapibus mauris sit amet efficitur. Phasellus eget viverra libero. Integer dapibus elit sapien, pulvinar feugiat augue elementum eget. Pellentesque vitae pharetra nibh."
+            }
+        ]
+    },
+    {
+        "id" : 4,
+        "ciudad": "Ontario",
+        "pais" : "Canadá",
+        "img" : "https://picsum.photos/id/11/400/400",
+        "actividades" : [
+            "Compras",
+            "Miradores",
+            "Gastronomía"
+        ],
+        "vuelos" : [
+            {
+                "nombre" : "Vuelo Santiago - Ontario (solo ida)",
+                "precio" : 540000,
+                "cupos" : 155
+            }
+        ],
+        "hoteles" : [
+            {
+                "nombre" : "Royal Ontario Resort",
+                "img" : "https://picsum.photos/seed/ontarioresort/300/300",
+                "precio" : 500000,
+                "disponibilidad" : "Del 1 de junio al 31 de diciembre",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus magna justo, eu pellentesque massa sagittis in. Donec id nisi vitae nulla eleifend ultrices. Aliquam elementum ex a felis pharetra, quis interdum erat imperdiet. Nam venenatis dapibus mauris sit amet efficitur. Phasellus eget viverra libero. Integer dapibus elit sapien, pulvinar feugiat augue elementum eget. Pellentesque vitae pharetra nibh."
+            }
+        ]
+    }
+
+]
